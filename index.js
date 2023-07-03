@@ -23,7 +23,7 @@ bot.on(Events.InteractionCreate, (interaction) => {
   const command = bot.commands.get(interaction.commandName);
   if (!command) return;
   command.execute(interaction);
-  console.log("La commande " + interaction.commandName + " a executée avec succès !\n");
+  console.log("La commande " + interaction.commandName + " a été executée avec succès !\n");
 });
 
 bot.on("ready", async () => {

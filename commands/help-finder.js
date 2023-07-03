@@ -2,7 +2,7 @@ const { SlashCommandBuilder } = require("discord.js");
 
 module.exports = {
   cmd: new SlashCommandBuilder()
-    .setName("help")
+    .setName("help-finder")
     .setDescription("Affiche comment se servir de la commande /mate"),
   async execute(interaction) {
     const embed = {
@@ -13,7 +13,7 @@ module.exports = {
       fields: [
         {
           name: "Exemple",
-          value: "/mate League of Legends Gold",
+          value: "/mate @League of Legends @Gold",
         },
       ],
       timestamp: new Date(),
